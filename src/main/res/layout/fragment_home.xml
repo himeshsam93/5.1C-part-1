@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- SEARCH BAR -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:hint="Search by sport..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- TOP STORIES -->
+    <TextView
+        android:text="Top Stories"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <!-- NEWS -->
+    <TextView
+        android:text="Latest News"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
